@@ -1,5 +1,56 @@
 # Changelog
 
+## [0.9.0](https://www.github.com/threkk/asdf/compare/v0.8.0...v0.9.0) (2021-11-16)
+
+
+### Features
+
+* add post update plugin support ([#1049](https://www.github.com/threkk/asdf/issues/1049)) ([304f72d](https://www.github.com/threkk/asdf/commit/304f72dbb207606fd82c04ee2c73cf11e9e6e0cc))
+* asdf latest defer to plugin to determine the latest version ([#938](https://www.github.com/threkk/asdf/issues/938)) ([664d82e](https://www.github.com/threkk/asdf/commit/664d82ed8a734eb30988840829a972f8ddd8e523))
+* configurable plugin repo last check time ([#957](https://www.github.com/threkk/asdf/issues/957)) ([1716afa](https://www.github.com/threkk/asdf/commit/1716afa02125aa322d8a688ff4b3e95f2e08b33c))
+* display plugin repo refs alongside urls in info cmd ([#1014](https://www.github.com/threkk/asdf/issues/1014)) ([cd0a6a7](https://www.github.com/threkk/asdf/commit/cd0a6a779eb18236fe7bf1f84403e33e636ef1f3))
+* Displays a warning when a plugin from the tools-version list does not exist ([#1033](https://www.github.com/threkk/asdf/issues/1033)) ([9430a39](https://www.github.com/threkk/asdf/commit/9430a39aef1dbf806a8954d71711747be1001076))
+* **latest:** adds the flag --all to the latest command ([461f8f2](https://www.github.com/threkk/asdf/commit/461f8f26ef1f3c5693e450aeef8774b7dad42cca))
+* support for "latest" in shell, local, and global ([#802](https://www.github.com/threkk/asdf/issues/802)) ([0edb505](https://www.github.com/threkk/asdf/commit/0edb50547c21b3c7f4f1379b898b7fef7e9a2da3))
+* toggle off repo sync completely ([#1011](https://www.github.com/threkk/asdf/issues/1011)) ([a3ba5a7](https://www.github.com/threkk/asdf/commit/a3ba5a794c07efb4aa9cce9c15d41b4b61d5df01))
+
+
+### Bug Fixes
+
+* <plugin update all> to latest commit on default branch for each plugin ([#800](https://www.github.com/threkk/asdf/issues/800)) ([456d8e3](https://www.github.com/threkk/asdf/commit/456d8e36ca76b36b848453a63b54ffeb214bce7e))
+* Adds "grep -P" to the list of banned commands ([#1064](https://www.github.com/threkk/asdf/issues/1064)) ([8a515f4](https://www.github.com/threkk/asdf/commit/8a515f49d7443ee318badbd4d8f092ad0d8f04ca))
+* allow plugin callbacks to be in any language ([#995](https://www.github.com/threkk/asdf/issues/995)) ([2ad0f5e](https://www.github.com/threkk/asdf/commit/2ad0f5ea452bd8f843951c4a9cc56a020e172b07))
+* broken link in contributing.md ([#852](https://www.github.com/threkk/asdf/issues/852)) ([90b92b9](https://www.github.com/threkk/asdf/commit/90b92b99be8fb8f482e0c41e5e867302ed97806e))
+* clarify the wording when no version is set ([#1088](https://www.github.com/threkk/asdf/issues/1088)) ([4116284](https://www.github.com/threkk/asdf/commit/41162849cf5c966c749ec435ebe32bd649a86ee8))
+* completions for asdf plugin list ([#1061](https://www.github.com/threkk/asdf/issues/1061)) ([43412aa](https://www.github.com/threkk/asdf/commit/43412aad5f668686daa058505a61c070561b46fc))
+* consistent system completion ([#911](https://www.github.com/threkk/asdf/issues/911)) ([f4a80b5](https://www.github.com/threkk/asdf/commit/f4a80b53df851e4d2af7921211b60d48773ccb8d))
+* Correct typo on getting started page ([#1086](https://www.github.com/threkk/asdf/issues/1086)) ([4321980](https://www.github.com/threkk/asdf/commit/4321980c3385ac1bafd77503c8ec77b26042d05b))
+* delete instructions to add dependencies with Homebrew ([#937](https://www.github.com/threkk/asdf/issues/937)) ([24d79d4](https://www.github.com/threkk/asdf/commit/24d79d4d9256d7d130fbaf8a4b7dc34aeb1b01d7))
+* docs file rename ([#809](https://www.github.com/threkk/asdf/issues/809)) ([2bf076f](https://www.github.com/threkk/asdf/commit/2bf076f3d33087966cdb4de52cfdf0042eb7c076))
+* don't override existing ASDF_DIR ([#1008](https://www.github.com/threkk/asdf/issues/1008)) ([73efc9f](https://www.github.com/threkk/asdf/commit/73efc9fa97744c49c5004ee8bb9b6064b6ce22f2))
+* ensure shims get created when data dir has spaces ([#996](https://www.github.com/threkk/asdf/issues/996)) ([39c9999](https://www.github.com/threkk/asdf/commit/39c9999519a1d3c51ffb3b8dddd141dbc29b3bd1))
+* Fix plugin-test arg parsing ([#1084](https://www.github.com/threkk/asdf/issues/1084)) ([c911f2d](https://www.github.com/threkk/asdf/commit/c911f2d43198945f21bb25100c9dab5a375c780b))
+* format command-reshim ([43d6fef](https://www.github.com/threkk/asdf/commit/43d6fef000a2d7ab5ab2cc662f7d066d3489e8b1))
+* full_version_name is not available here ([#1031](https://www.github.com/threkk/asdf/issues/1031)) ([8490526](https://www.github.com/threkk/asdf/commit/84905265467c9fdf618c11f69a5ae71408e18bea))
+* help for extension commands for plugins with hyphens in the name. ([#1048](https://www.github.com/threkk/asdf/issues/1048)) ([3e0cb9a](https://www.github.com/threkk/asdf/commit/3e0cb9aaea7f2bf282a18c4912454737fef0741b))
+* help text as per new feats in [#633](https://www.github.com/threkk/asdf/issues/633) ([#991](https://www.github.com/threkk/asdf/issues/991)) ([0d95663](https://www.github.com/threkk/asdf/commit/0d956635b5cabe35f0895121929e8e668a3ee03d))
+* incorrect usage of grep ([#1035](https://www.github.com/threkk/asdf/issues/1035)) ([30d27cb](https://www.github.com/threkk/asdf/commit/30d27cbe6b358cd790fb66dbc8a14806eca23f05))
+* insert error handling in list-all & download plugin scripts ([#881](https://www.github.com/threkk/asdf/issues/881)) ([a7d3661](https://www.github.com/threkk/asdf/commit/a7d3661f6c53b24ae1c21e93f94209f3af243349))
+* lint scripts for local and CI ([#961](https://www.github.com/threkk/asdf/issues/961)) ([5dafbc8](https://www.github.com/threkk/asdf/commit/5dafbc8e390eacbcfcf97d6d2890e0aa6ef9cd60))
+* pipe find into while ([26d2c64](https://www.github.com/threkk/asdf/commit/26d2c64477a1faabedd9a5f97aa7da706988cd72))
+* plugin update portability ([#924](https://www.github.com/threkk/asdf/issues/924)) ([d7b62d2](https://www.github.com/threkk/asdf/commit/d7b62d2e920d2395f8812e5a5ff9d34b2986c452))
+* Quote commands correctly in plugin-test ([#1078](https://www.github.com/threkk/asdf/issues/1078)) ([69ff2d0](https://www.github.com/threkk/asdf/commit/69ff2d0c9a4fd273c9dac151345f60f7b146e569))
+* regex validate plugin names on plugin add cmd ([#1010](https://www.github.com/threkk/asdf/issues/1010)) ([7697e6e](https://www.github.com/threkk/asdf/commit/7697e6e344809ab4603d0764fb8a969c2bbaf3b6))
+* remove find -print0 ([b9228a2](https://www.github.com/threkk/asdf/commit/b9228a26de6a0337a7b59fb5252323d368a72a92))
+* Sed improvements ([#1087](https://www.github.com/threkk/asdf/issues/1087)) ([4b93bc8](https://www.github.com/threkk/asdf/commit/4b93bc81aa982b72621cd09e71eeea71ee009185))
+* sed re error trailing backslash on FreeBSD ([#1046](https://www.github.com/threkk/asdf/issues/1046)). ([#1047](https://www.github.com/threkk/asdf/issues/1047)) ([47e8fb0](https://www.github.com/threkk/asdf/commit/47e8fb051b3577d251376976d5767c520f3524fc))
+* shellcheck errors and typo ([6af66dc](https://www.github.com/threkk/asdf/commit/6af66dc88cc079de560f08f53734709b22d212ba))
+* shims break when POSIXLY_CORRECT=1 ([0de6910](https://www.github.com/threkk/asdf/commit/0de6910d1f99c9576f8c2e5a916644fed99cddb5)), closes [#581](https://www.github.com/threkk/asdf/issues/581)
+* support latest with filter on local and global ([#633](https://www.github.com/threkk/asdf/issues/633)) ([5cf8f89](https://www.github.com/threkk/asdf/commit/5cf8f8962fbd5fe2bc86856bc4676f88e1aa8885))
+* typo and refactor on top of master ([0c263ad](https://www.github.com/threkk/asdf/commit/0c263ad70090dd832215ff20f12dd4e14855fdbe))
+* Use more idiomatic fish ([#1042](https://www.github.com/threkk/asdf/issues/1042)) ([847ec73](https://www.github.com/threkk/asdf/commit/847ec73751ced9d149ce0826309fee0f894ca664))
+* wait until the plugin update are finished ([#1037](https://www.github.com/threkk/asdf/issues/1037)) ([7e1f2a0](https://www.github.com/threkk/asdf/commit/7e1f2a0d938052d4fa5ce6546f07b3decbd740cf))
+
 ## 0.8.1
 
 Features
